@@ -1,0 +1,117 @@
+/* Box Model Hack */
+* {
+  box-sizing: border-box;
+}
+
+/* Clear fix hack */
+.clearfix:after {
+     content: ".";
+     display: block;
+     clear: both;
+     visibility: hidden;
+     line-height: 0;
+     height: 0;
+}
+
+.clear {
+	clear: both;
+}
+
+/******************************************
+/* BASE STYLES
+/*******************************************/
+
+body {
+background-color: blue;
+height: 100vh ;
+width: 100%;
+display: flex;
+justify-content: center;
+flex-flow: column nowrap;
+align-items: center;
+flex: 1;
+
+}
+
+
+/******************************************
+/* LAYOUT
+/*******************************************/
+header {
+
+}
+
+footer {
+}
+h1{
+  background-color: orange;
+  height: 10%;
+  justify-self: flex-start;
+}
+
+.flags{
+  display: flex;
+  align-items: center;
+  justify-content: space-evenly;
+  height: 25%;
+  width: 80%;
+  background-color: red;
+}
+
+#forecast{
+  background-color: greenyellow;
+  width: 80%;
+  height: 20%;
+  margin-top: 2%;
+  display: flex;
+  justify-content: space-between;
+}
+
+button{
+  background-color: yellow;
+  width: 18%;
+  height: 70%;
+}
+
+section div{
+  width: 12%;
+  background-color: white;
+  display: flex;
+  flex-flow: column nowrap;
+}
+h3,span{
+  text-align: center;
+}
+
+#italy{
+  background: url("C:/Users/huert/OneDrive/Documents/100DevsClassFolder/class26-materials/WeatherAPI/assets/shesFromItalia.jpg");
+  background-size: 100% 100%;
+  background-repeat: no-repeat;
+}
+
+#japan{
+  background: url("C:/Users/huert/OneDrive/Documents/100DevsClassFolder/class26-materials/WeatherAPI/assets/uwuFlag.jpg");
+  background-size: 100% 100%;
+  background-repeat: no-repeat;
+}
+
+#usa{
+  background: url("C:/Users/huert/OneDrive/Documents/100DevsClassFolder/class26-materials/WeatherAPI/assets/merica.webp");
+  background-size: 100% 100%;
+  background-repeat: no-repeat;
+}
+
+#gb{
+  background: url("C:/Users/huert/OneDrive/Documents/100DevsClassFolder/class26-materials/WeatherAPI/assets/greatBritainFlag.png");
+  background-size: 100% 100%;
+  background-repeat: no-repeat;
+}
+
+#france{
+  background: url("C:/Users/huert/OneDrive/Documents/100DevsClassFolder/class26-materials/WeatherAPI/assets/france.jpg");
+  background-size: 100% 100%;
+  background-repeat: no-repeat;
+}
+/******************************************
+/* ADDITIONAL STYLES
+/*******************************************/
