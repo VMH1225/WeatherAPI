@@ -43,6 +43,15 @@ header {
 
 footer {
 }
+
+#current{
+  background-color: palegreen;
+  height: 5%;
+  width: 10%;
+  display: flex;
+  flex-flow: column nowrap;
+}
+
 h1{
   background-color: orange;
   height: 10%;
@@ -61,7 +70,7 @@ h1{
 #forecast{
   background-color: greenyellow;
   width: 80%;
-  height: 20%;
+  height: 15%;
   margin-top: 2%;
   display: flex;
   justify-content: space-between;
