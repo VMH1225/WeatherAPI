@@ -20,7 +20,9 @@ function milanForecast(){
 	.then(res => res.json())
 	.then(data => {
 		console.log(data)
-		document.querySelector('#currentTemp').innerHTML = data.current_observation.condition.temp
+		document.querySelector('#current > span').innerHTML = data.current_observation.condition.temperature
+		document.querySelector('#current span ~ span').innerHTML = data.current_observation.condition.text
+		weekWeather(data.forecasts)
 	})
 	.catch(err =>{
 		console.log(`Error ${err}`)
@@ -33,6 +35,9 @@ function tokyoForecast(){
 			.then(res => res.json())
 			.then(data => {
 				console.log(data)
+				document.querySelector('#current > span').innerHTML = data.current_observation.condition.temperature
+				document.querySelector('#current span ~ span').innerHTML = data.current_observation.condition.text
+				weekWeather(data.forecasts)
 			})
 			.catch(err =>{
 				console.log(`Error ${err}`)
@@ -44,6 +49,9 @@ function newYorkForecast(){
 				.then(res => res.json())
 				.then(data => {
 					console.log(data)
+					document.querySelector('#current > span').innerHTML = data.current_observation.condition.temperature
+					document.querySelector('#current span ~ span').innerHTML = data.current_observation.condition.text
+					weekWeather(data.forecasts)
 				})
 				.catch(err =>{
 					console.log(`Error ${err}`)
@@ -55,6 +63,9 @@ function londonForecast(){
 				.then(res => res.json())
 				.then(data => {
 					console.log(data)
+					document.querySelector('#current > span').innerHTML = data.current_observation.condition.temperature
+					document.querySelector('#current span ~ span').innerHTML = data.current_observation.condition.text
+					weekWeather(data.forecasts)
 				})
 				.catch(err =>{
 					console.log(`Error ${err}`)
@@ -66,9 +77,24 @@ function parisForecast(){
 				.then(res => res.json())
 				.then(data => {
 					console.log(data)
+					document.querySelector('#current > span').innerHTML = data.current_observation.condition.temperature
+					document.querySelector('#current span ~ span').innerHTML = data.current_observation.condition.text
+					weekWeather(data.forecasts)
 				})
 				.catch(err =>{
 					console.log(`Error ${err}`)
 				})
 }
 
+
+function weekWeather(week){
+	console.log(week)
+	let day = 1
+	for(let i=0; i < 7; i++){
+		document.querySelector(`#day${day} h3`).innerHTML = week[i].day
+		document.querySelector(`#day${day} span`).innerHTML =  week[i].high
+		document.querySelector(`#day${day} span ~ span`).innerHTML = week[i].low
+		document.querySelector(`#day${day} .text`).innerHTML =  week[i].text
+		day++
+	}
+}

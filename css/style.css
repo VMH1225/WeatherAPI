@@ -30,6 +30,7 @@ justify-content: center;
 flex-flow: column nowrap;
 align-items: center;
 flex: 1;
+font-family: 'Bubblegum Sans', cursive;
 
 }
 
@@ -46,10 +47,11 @@ footer {
 
 #current{
   background-color: palegreen;
-  height: 5%;
-  width: 10%;
+  height: 10%;
+  width: 20%;
   display: flex;
   flex-flow: column nowrap;
+  justify-content: space-between;
 }
 
 h1{
@@ -124,3 +126,8 @@ h3,span{
 /******************************************
 /* ADDITIONAL STYLES
 /*******************************************/
+
+#current > span{
+  font-size: 24px;
+  font-weight: 400;
+}
