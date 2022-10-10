@@ -56,17 +56,19 @@ footer {
 
 h1{
   background-color: orange;
-  height: 10%;
+  font-size: 40px;
+  height: 8%;
   justify-self: flex-start;
 }
 
 .flags{
   display: flex;
+  flex-flow: row wrap;
   align-items: center;
   justify-content: space-evenly;
   height: 25%;
   width: 80%;
-  background-color: red;
+  background-color:teal;
 }
 
 #forecast{
@@ -74,8 +76,8 @@ h1{
   width: 80%;
   height: 15%;
   margin-top: 2%;
-  display: flex;
   justify-content: space-between;
+  display: none;
 }
 
 button{
@@ -130,4 +132,16 @@ h3,span{
 #current > span{
   font-size: 24px;
   font-weight: 400;
+}
+
+@media all and (max-width: 630px){
+  body{
+    background-color: red;
+  }
+  .flags button{
+    width: 50%;
+  }
+
+  
+
 }
