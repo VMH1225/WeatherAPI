@@ -23,7 +23,7 @@
 
 body {
 background-color: blue;
-height: 100vh ;
+height: 100vh;
 width: 100%;
 display: flex;
 justify-content: center;
@@ -134,14 +134,22 @@ h3,span{
   font-weight: 400;
 }
 
-@media all and (max-width: 630px){
+@media all and (max-width: 800px){
   body{
     background-color: red;
+  }
+  .flags{
+    background-color: blue;
   }
   .flags button{
     width: 50%;
   }
 
-  
+  body{
+    justify-content: flex-start;
+  }
+  section{
+    justify-self: flex-end;
+  }
 
 }
