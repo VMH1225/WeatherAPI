@@ -35,7 +35,7 @@ function tokyoForecast(){
 			.then(res => res.json())
 			.then(data => {
 				console.log(data)
-				document.querySelector('#current > span').innerHTML = data.current_observation.condition.temperature
+				document.querySelector('#current > span').innerHTML = `Current Weather: ${data.current_observation.condition.temperature}`
 				document.querySelector('#current span ~ span').innerHTML = data.current_observation.condition.text
 				weekWeather(data.forecasts)
 			})
@@ -49,7 +49,7 @@ function newYorkForecast(){
 				.then(res => res.json())
 				.then(data => {
 					console.log(data)
-					document.querySelector('#current > span').innerHTML = data.current_observation.condition.temperature
+					document.querySelector('#current > span').innerHTML = `Current Weather: ${data.current_observation.condition.temperature}`
 					document.querySelector('#current span ~ span').innerHTML = data.current_observation.condition.text
 					weekWeather(data.forecasts)
 				})
@@ -63,7 +63,7 @@ function londonForecast(){
 				.then(res => res.json())
 				.then(data => {
 					console.log(data)
-					document.querySelector('#current > span').innerHTML = data.current_observation.condition.temperature
+					document.querySelector('#current > span').innerHTML = `Current Weather: ${data.current_observation.condition.temperature}`
 					document.querySelector('#current span ~ span').innerHTML = data.current_observation.condition.text
 					weekWeather(data.forecasts)
 				})
@@ -77,7 +77,7 @@ function parisForecast(){
 				.then(res => res.json())
 				.then(data => {
 					console.log(data)
-					document.querySelector('#current > span').innerHTML = data.current_observation.condition.temperature
+					document.querySelector('#current > span').innerHTML = `Current Weather: ${data.current_observation.condition.temperature}`
 					document.querySelector('#current span ~ span').innerHTML = data.current_observation.condition.text
 					weekWeather(data.forecasts)
 				})
