@@ -90,6 +90,7 @@ function parisForecast(){
 function weekWeather(week){
 	console.log(week)
 	document.querySelector('#forecast').style.display = 'flex'
+	document.querySelector('#current').style.display = 'flex'
 	let day = 1
 	for(let i=0; i < 7; i++){
 		document.querySelector(`#day${day} h3`).innerHTML = week[i].day
