@@ -93,31 +93,31 @@ h3,span{
 }
 
 #italy{
-  background: url("C:/Users/huert/OneDrive/Documents/100DevsClassFolder/class26-materials/WeatherAPI/assets/shesFromItalia.jpg");
+  background: url("assets/shesFromItalia.jpg");
   background-size: 100% 100%;
   background-repeat: no-repeat;
 }
 
 #japan{
-  background: url("C:/Users/huert/OneDrive/Documents/100DevsClassFolder/class26-materials/WeatherAPI/assets/uwuFlag.jpg");
+  background: url("assets/uwuFlag.jpg");
   background-size: 100% 100%;
   background-repeat: no-repeat;
 }
 
 #usa{
-  background: url("C:/Users/huert/OneDrive/Documents/100DevsClassFolder/class26-materials/WeatherAPI/assets/merica.webp");
+  background: url("assets/merica.webp");
   background-size: 100% 100%;
   background-repeat: no-repeat;
 }
 
 #gb{
-  background: url("C:/Users/huert/OneDrive/Documents/100DevsClassFolder/class26-materials/WeatherAPI/assets/greatBritainFlag.png");
+  background: url("assets/greatBritainFlag.png");
   background-size: 100% 100%;
   background-repeat: no-repeat;
 }
 
 #france{
-  background: url("C:/Users/huert/OneDrive/Documents/100DevsClassFolder/class26-materials/WeatherAPI/assets/france.jpg");
+  background: url("assets/france.jpg");
   background-size: 100% 100%;
   background-repeat: no-repeat;
 }
