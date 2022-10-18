@@ -93,31 +93,31 @@ h3,span{
 }
 
 #italy{
-  background: url("assets/shesFromItalia.jpg");
+  background: url("css/assets/shesFromItalia.jpg");
   background-size: 100% 100%;
   background-repeat: no-repeat;
 }
 
 #japan{
-  background: url("assets/uwuFlag.jpg");
+  background: url("css/assets/uwuFlag.jpg");
   background-size: 100% 100%;
   background-repeat: no-repeat;
 }
 
 #usa{
-  background: url("assets/merica.webp");
+  background: url("css/assets/merica.webp");
   background-size: 100% 100%;
   background-repeat: no-repeat;
 }
 
 #gb{
-  background: url("assets/greatBritainFlag.png");
+  background: url("css/assets/greatBritainFlag.png");
   background-size: 100% 100%;
   background-repeat: no-repeat;
 }
 
 #france{
-  background: url("assets/france.jpg");
+  background: url("css/assets/france.jpg");
   background-size: 100% 100%;
   background-repeat: no-repeat;
 }
