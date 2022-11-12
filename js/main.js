@@ -15,7 +15,6 @@ document.querySelector('#gb').addEventListener('click', londonForecast)
 document.querySelector('#france').addEventListener('click', parisForecast)
 
 function milanForecast(){
-	console.log(`She's from italia`)
 	fetch('https://yahoo-weather5.p.rapidapi.com/weather?location=milan&format=json&u=f', options)
 	.then(res => res.json())
 	.then(data => {
